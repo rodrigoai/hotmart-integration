@@ -1,0 +1,109 @@
+{
+  "id": "936f19ea-6d3e-424d-bae3-37408a32a3b6",
+  "creation_date": 1750078392425,
+  "event": "PURCHASE_APPROVED",
+  "version": "2.0.0",
+  "data": {
+    "product": {
+      "id": 5345772,
+      "ucode": "4e899413-56e1-47a6-adb5-0954b9aa6917",
+      "name": "Job na Gringa",
+      "warranty_date": "2025-06-23T00:00:00Z",
+      "support_email": "oi@jobnagringa.com.br",
+      "has_co_production": false,
+      "is_physical_product": false
+    },
+    "affiliates": [
+      {
+        "affiliate_code": "",
+        "name": ""
+      }
+    ],
+    "buyer": {
+      "email": "hgbonatto@gmail.com",
+      "name": "HUGO MORAES BONATTO",
+      "first_name": "HUGO",
+      "last_name": "BONATTO",
+      "checkout_phone_code": "44",
+      "checkout_phone": "44999408731",
+      "address": {
+        "city": "Curitiba",
+        "country": "Brasil",
+        "country_iso": "BR",
+        "state": "PR",
+        "neighborhood": "Mossunguê",
+        "zipcode": "81210005",
+        "address": "Rua Bárbara Cvintal",
+        "number": "280",
+        "complement": "109"
+      },
+      "document": "09266617954",
+      "document_type": "CPF"
+    },
+    "producer": {
+      "name": "PAULO LUAN MARIANO SILVA TECNOLOGIA DA INFORMACAO LTDA",
+      "document": "37117212000163",
+      "legal_nature": "Pessoa Jurídica"
+    },
+    "commissions": [
+      {
+        "value": 50.2,
+        "source": "MARKETPLACE",
+        "currency_value": "BRL"
+      },
+      {
+        "value": 446.8,
+        "source": "PRODUCER",
+        "currency_value": "BRL"
+      }
+    ],
+    "purchase": {
+      "approved_date": 1750078387000,
+      "full_price": {
+        "value": 541.12,
+        "currency_value": "BRL"
+      },
+      "price": {
+        "value": 497,
+        "currency_value": "BRL"
+      },
+      "checkout_country": {
+        "name": "Brasil",
+        "iso": "BR"
+      },
+      "order_bump": {
+        "is_order_bump": false
+      },
+      "original_offer_price": {
+        "value": 497,
+        "currency_value": "BRL"
+      },
+      "order_date": 1750078385000,
+      "status": "APPROVED",
+      "transaction": "HP0365453131",
+      "payment": {
+        "installments_number": 4,
+        "type": "CREDIT_CARD"
+      },
+      "offer": {
+        "code": "wscwd9c6"
+      },
+      "invoice_by": "HOTMART",
+      "subscription_anticipation_purchase": false,
+      "date_next_charge": 1781611200000,
+      "recurrence_number": 1,
+      "is_funnel": false,
+      "business_model": "I"
+    },
+    "subscription": {
+      "status": "ACTIVE",
+      "plan": {
+        "id": 1035991,
+        "name": "Anual"
+      },
+      "subscriber": {
+        "code": "XKPO3M3K"
+      }
+    }
+  }
+}

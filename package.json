@@ -1,0 +1,15 @@
+{
+  "name": "hotmart-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rodrigo Lima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jest": "^30.0.0"
+  }
+}
