@@ -34,7 +34,7 @@ describe('formatOrder', () => {
     const result = formatOrder(mockInput);
     expect(result.customer.name).toBe('John Doe');
     expect(result.payments[0].gateway).toBe('Hotmart');
-    expect(result.payments[0].amount).toBe('197');
+    expect(result.payments[0].amount).toBe('497');
     expect(result.items[0].product_id).toBe(36);
   });
 
@@ -54,4 +54,7 @@ describe('formatOrder', () => {
     expect(typeof result.payments[0].amount).toBe('string');
     expect(result.payments[0].amount).toBe('197');
   });
+
+
 });
+

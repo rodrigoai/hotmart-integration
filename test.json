@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2025-06-30",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "washington.inf@gmail.com",
+      "identification": "38873444806",
+      "name": "WASHINGTON DE SOUSA MENESES",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0680646203",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  }
+]

@@ -1,3 +1,4 @@
+
 function formatOrder(sourceJson) {
     
     
@@ -53,7 +54,7 @@ function formatOrder(sourceJson) {
     return apiPayload;
 };
 
-module.exports =  formatOrder;
+module.exports = formatOrder;
 
 //TODO:
 
@@ -61,9 +62,8 @@ module.exports =  formatOrder;
 [ ] Verificar se o campo invoice_by é igual a hotmart, caso contrário retornar erro
 [ ] Verificar se o campo price.value é um número e converter para string
 [ ] Verificar se o campo buyer.checkout_phone é um número válido, SEN, flagear o estado como NA
-[ ] Verificar se o campo buyer.document é um CPF válido, sen, flagear o estado como NA
-[ ] Verificar se o campo buyer.address está completo (neighborhood, address, number, zipcode, state, city)
-[ ] Realizar o de para do id do produto para o id da api
+[ ] Ignorar todos os dados do buyer e trabalhar apenas com o email
+[ ] Realizar o de para do id do produto para o id da api (5345772 - Jobnagringa / 4533345 - Felipe Fontoura)
 [ ] realizar o de para do plano de pagamento  para o plano de origem
 [x] remover o checkout_page_id se não for necessário
 */

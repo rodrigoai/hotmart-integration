@@ -1,0 +1,22 @@
+{   
+    "jobnagringa": {
+        "apiKey":"tHhHEZNYHHyy3dEZeksQKebCLzA1bAat4pbxe_rZxTsbHxw916H2DSQxUkruLwPBpDk4srzGMG8JZsj4eLons8dmZ2xo9M6R4c7E",
+        "creditCardCode":"3",
+        "pixCode":"1",
+        "env": "jobnagringa",
+        "products": {
+            "5345772": "36",
+            "4533345": ""
+        }
+    },
+    "coyo.staging": {
+        "apiKey":"EyXkwuuYmzejxKLzj7cq5xg8Etzyz9hCSV5Mxs6D2r3h3Ya_ZotM9G8h72VEp_QVzFzA2Bso69uiW8",
+        "creditCardCode":"1",
+        "pixCode":"2",
+        "env": "coyo.staging",
+        "products": {
+            "5345772": "39",
+            "4533345": "17"
+        }           
+        }
+    }
