@@ -99,6 +99,55 @@
             color: #666;
             font-style: italic;
         }
+        .import-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+        .import-section h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus, input[type="password"]:focus, select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+        .import-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .import-btn:hover {
+            background-color: #218838;
+        }
+        .import-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+        }
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
@@ -123,6 +172,46 @@
                 <div class="loading">Loading files...</div>
             </div>
         </div>
+
+        <div class="import-section">
+            <h3>Import CSV to API</h3>
+            <form id="importForm">
+                <div class="form-group">
+                    <label for="csvFileSelect">Select CSV File:</label>
+                    <select id="csvFileSelect" name="csvFileSelect" required>
+                        <option value="">Select a file...</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jsonFilePath">JSON Output File Path:</label>
+                    <input type="text" id="jsonFilePath" name="jsonFilePath" placeholder="output.json" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="environment">Environment:</label>
+                    <select id="environment" name="environment" required>
+                        <option value="">Select environment...</option>
+                        <option value="jobnagringa">Job Na Gringa</option>
+                        <option value="coyo.staging">Coyo Staging</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bearerToken">Bearer Token:</label>
+                    <input type="password" id="bearerToken" name="bearerToken" placeholder="Enter Bearer token" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="callApi" name="callApi" checked>
+                        Call API after processing
+                    </label>
+                </div>
+                
+                <button type="submit" class="import-btn" id="importBtn">Import CSV</button>
+            </form>
+        </div>
     </div>
 
     <script>
@@ -133,9 +222,11 @@
                 const files = await response.json();
                 
                 const filesList = document.getElementById('filesList');
+                const csvFileSelect = document.getElementById('csvFileSelect');
                 
                 if (files.length === 0) {
                     filesList.innerHTML = '<div class="loading">No files uploaded yet.</div>';
+                    csvFileSelect.innerHTML = '<option value="">No files available</option>';
                     return;
                 }
                 
@@ -146,8 +237,15 @@
                     </div>`
                 ).join('');
                 
+                // Populate file select dropdown
+                csvFileSelect.innerHTML = '<option value="">Select a file...</option>' + 
+                    files.map(file => 
+                        `<option value="csv_files/${file.name}">${file.name}</option>`
+                    ).join('');
+                
             } catch (error) {
                 document.getElementById('filesList').innerHTML = '<div class="error">Error loading files.</div>';
+                document.getElementById('csvFileSelect').innerHTML = '<option value="">Error loading files</option>';
             }
         }
 
@@ -201,6 +299,81 @@
             } finally {
                 uploadBtn.disabled = false;
                 uploadBtn.textContent = 'Upload CSV File';
+            }
+        });
+
+        // Handle import form submission
+        document.getElementById('importForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const csvFileSelect = document.getElementById('csvFileSelect');
+            const jsonFilePath = document.getElementById('jsonFilePath');
+            const environment = document.getElementById('environment');
+            const bearerToken = document.getElementById('bearerToken');
+            const callApi = document.getElementById('callApi');
+            const importBtn = document.getElementById('importBtn');
+            const message = document.getElementById('message');
+            
+            // Validate form
+            if (!csvFileSelect.value) {
+                showMessage('Please select a CSV file.', 'error');
+                return;
+            }
+            
+            if (!jsonFilePath.value.trim()) {
+                showMessage('Please enter a JSON output file path.', 'error');
+                return;
+            }
+            
+            if (!environment.value) {
+                showMessage('Please select an environment.', 'error');
+                return;
+            }
+            
+            if (!bearerToken.value.trim()) {
+                showMessage('Please enter a Bearer token.', 'error');
+                return;
+            }
+            
+            // Prepare request data
+            const requestData = {
+                csvFilePath: csvFileSelect.value,
+                jsonFilePath: jsonFilePath.value.trim(),
+                env: environment.value,
+                callApi: callApi.checked
+            };
+            
+            // Show loading state
+            importBtn.disabled = true;
+            importBtn.textContent = 'Processing...';
+            message.style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/v1/importCSV', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${bearerToken.value.trim()}`
+                    },
+                    body: JSON.stringify(requestData)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showMessage(`CSV imported successfully! ${callApi.checked ? 'API called.' : 'Data processed only.'}`, 'success');
+                    // Clear form fields except file selection
+                    jsonFilePath.value = '';
+                    bearerToken.value = '';
+                } else {
+                    showMessage(`Import failed: ${result.message}`, 'error');
+                }
+                
+            } catch (error) {
+                showMessage('Error importing CSV. Please try again.', 'error');
+            } finally {
+                importBtn.disabled = false;
+                importBtn.textContent = 'Import CSV';
             }
         });
 
