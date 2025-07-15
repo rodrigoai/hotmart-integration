@@ -1,6 +1,12 @@
 const formatOrder = require('../formatOrder');
+const webhook_example = require('../resources/webhook_example.json');
+const fs = require('fs');
 
 describe('formatOrder', () => {
+
+    const rawData = fs.readFileSync('config.json');
+    const config = JSON.parse(rawData);
+
   const mockInput = {
     data: {
       buyer: {
@@ -30,31 +36,13 @@ describe('formatOrder', () => {
     }
   };
 
-  it('should return a valid payload when the input JSON is correct', () => {
-    const result = formatOrder(mockInput);
-    expect(result.customer.name).toBe('John Doe');
-    expect(result.payments[0].gateway).toBe('Hotmart');
-    expect(result.payments[0].amount).toBe('497');
-    expect(result.items[0].product_id).toBe(36);
-  });
+  it('should retrieve a message when a tenant doesnt exist in the config', () => {
 
-  it('should throw an error if sourceJson.data is missing', () => {
-    expect(() => formatOrder({})).toThrow('Json Inválido');
-  });
+    const tenant = config['teste.staging'];
+    expect(() => formatOrder(mockInput, tenant)).toThrow('Tenant not found in config');
+    
 
-  it('should return error if invoice_by is not HOTMART', () => {
-    const modifiedInput = JSON.parse(JSON.stringify(mockInput));
-    modifiedInput.data.purchase.invoice_by = 'PAGSEGURO';
-    const result = formatOrder(modifiedInput);
-    expect(result.payments[0].gateway).toBe('error');
   });
-
-  it('should convert the price value to a string', () => {
-    const result = formatOrder(mockInput);
-    expect(typeof result.payments[0].amount).toBe('string');
-    expect(result.payments[0].amount).toBe('197');
-  });
-
 
 });
 

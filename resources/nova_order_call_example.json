@@ -1,0 +1,32 @@
+{
+  "coupon": "",
+  "scheduled_at": "2025-06-17T00:42:56.215Z",
+  "skip_content_release": false,
+  "items": [
+    {
+      "product_id": 5345772,
+      "quantity": 1
+    }
+  ],
+  "checkout_page_id": "8d34eeb6-7fe8-4977-be89-04822cbf38c2",
+  "customer": {
+    "email": "hgbonatto@gmail.com",
+    "identification": "09266617954",
+    "name": "HUGO MORAES BONATTO",
+    "neighborhood": "Mossunguê",
+    "phone": "4444999408731",
+    "street": "Rua Bárbara Cvintal",
+    "number": "280",
+    "zipcode": "81210005",
+    "state": "PR",
+    "city": "Curitiba"
+  },
+  "payments": [
+    {
+      "gateway": "Hotmart",
+      "gateway_id": "HP0365453131",
+      "payment_plan_id": "4-1",
+      "amount": "497"
+    }
+  ]
+}

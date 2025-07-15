@@ -1,28 +1,36 @@
+const webhook_example = require('./resources/webhook_example.json');
+const fs = require('fs');
+const { removeInvalidValues } = require('./utils');
 
-function formatOrder(sourceJson) {
+function formatOrder(sourceJson, tenant) {
     
     
     const sourceData = sourceJson.data;
 
     if (!sourceData) {
-    throw new Error('Formato inválido de JSON');
+        throw new Error('Formato inválido de JSON');
     }
     
+    if (!tenant || tenant === undefined) {
+        throw new Error('Tenant not found in config');
+    }
    
     const buyer = sourceData.buyer;
     const address = buyer.address;
     const purchase = sourceData.purchase;
     const product = sourceData.product;
-    const crmInfo = {};
+    const order_date = new Date(sourceJson.creation_date).toISOString().split('T')[0];
+    
+    const paymentMethod = purchase.payment === 'CREDIT_CARD' ? tenant.creditCardCode : tenant.pixCode;
+    const paymentPlan = `${paymentMethod}-${purchase.payment.installments_number}`;
+    
 
-    // Constrói o novo objeto JSON com os dados extraídos e formatados
     const apiPayload = {
-        "coupon": "", // Campo fixo, conforme o exemplo
+        "date": order_date,
+        "coupon": purchase.offer.code,
+        "observation": `Pedido importado Hotmart - ${purchase.transaction}`,
         "items": [
-            {
-                "product_id": 36,
-                "quantity": 1 // Quantidade fixa
-            }
+            { "product_id": tenant.products[product.id], "quantity": "1" }
         ],
         "customer": {
             "email": buyer.email,
@@ -36,23 +44,22 @@ function formatOrder(sourceJson) {
             "state": address.state,
             "city": address.city
         },
-        "crm_info": crmInfo, 
         "payments": [
             {
-                // Mapeia o 'invoice_by' para o nome do gateway.
-                // Você pode adicionar mais lógicas aqui se houver outros gateways.
                 "gateway": purchase.invoice_by === "HOTMART" ? "Hotmart" : "Outro",
                 "gateway_id": purchase.transaction,
-                "payment_plan_id": "2-1",
-                // Converte o valor para string, como no exemplo.
-                "amount": String(purchase.price.value)
+                "payment_plan_id": paymentPlan,
+                "amount": purchase.price.value,
+                "status": "paid"
             }
         ]
     };
-
-    console.log('Payload formatado para a API:', JSON.stringify(apiPayload, null, 2));
-    return apiPayload;
+    // console.log('Payload formatado:', removeInvalidValues(apiPayload));
+    return removeInvalidValues(apiPayload);
 };
+
+// formatOrder(webhook_example, config['coyo.staging']);
+
 
 module.exports = formatOrder;
 

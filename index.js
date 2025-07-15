@@ -1,10 +1,10 @@
 const express = require('express');
 const formatOrder = require('./formatOrder'); 
 const callApi = require('./callApi'); 
-
 const fs = require('fs');
-
 const parseCsvToJson = require('./parseCsvToJson');
+const rawData = fs.readFileSync('config.json');
+const config = JSON.parse(rawData);
 
 const app = express();
 
@@ -12,31 +12,29 @@ app.use(express.json());
 
 app.post('/api/v1/order', async (req, res) => {
   const orderPayload = req.body;
-  const formattedData = formatOrder(orderPayload);
-
+  const formattedData = formatOrder(orderPayload, config["coyo.staging"]);
   try {
-    const apiResponse = await callApi(formattedData);
+    const bearerToken = req.header('Authorization').replace('Bearer ', '');
+    res.header('Content-Type', 'application/json');
+
+    const apiResponse = await callApi(formattedData, config["coyo.staging"], bearerToken);
     res.status(200).json({ message: 'Order processed', apiResponse });
+
   } catch (err) {
-    res.status(500).json({ message: 'Erro ao chamar a API', error: err.message });
+    res.status(500).json({ message: 'Erro ao chamar a API', error: err.message, formattedData });
   }
 });
 
 
 app.post('/api/v1/importCSV', async (req, res) => {
-  const rawData = fs.readFileSync('config.json');
-  const config = JSON.parse(rawData);
   const bearerToken = req.header('Authorization').replace('Bearer ', '');
-
-  console.log('Bearer Token:', bearerToken);
-
+  res.header('Content-Type', 'application/json');
   const { csvFilePath, jsonFilePath, env } = req.body;
-
   try {
-
-    
     const result = await parseCsvToJson(csvFilePath, jsonFilePath, config[env]);
-    await callApi(result, config[env], bearerToken);
+    if (req.body.callApi) {
+      await callApi(result, config[env], bearerToken);
+    }
     res.status(200).json({ data: result });
   
   } catch (error) {
