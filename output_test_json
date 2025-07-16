@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2025-06-30",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "marcosrosset51@gmail.com",
+      "identification": "10079266940",
+      "name": "Marcos Vinicius Rosset",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "39",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3121569846-1",
+        "payment_plan_id": "1-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  }
+]
