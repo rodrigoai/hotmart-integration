@@ -12,11 +12,11 @@ function parseCsvToJson(csvFilePath, jsonFilePath, tenant) {
       console.error(errorMsg);
       return reject(new Error(errorMsg));
     }
-    
+
     fs.createReadStream(csvFilePath)
       .pipe(csv({ separator: ';' }))
       .on('data', (row) => {
-           
+
 
         const paymentMethod = row['Método de pagamento'] === 'Pix' ? tenant.pixCode : tenant.creditCardCode;
         const paymentPlan = `${paymentMethod}-${row['Quantidade total de parcelas']}`;
@@ -52,7 +52,7 @@ function parseCsvToJson(csvFilePath, jsonFilePath, tenant) {
         };
         results.push(removeInvalidValues(formattedJson));
 
-        
+
       })
       .on('end', () => {
         fs.writeFile(jsonFilePath, JSON.stringify(results, null, 2), (err) => {

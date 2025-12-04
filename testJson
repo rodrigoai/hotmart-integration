@@ -1,0 +1,1927 @@
+[
+  {
+    "date": "2025-10-31",
+    "coupon": "JNG-CORAL",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "raphaelpjviana@gmail.com",
+      "identification": "07883408402",
+      "name": "Raphael Pierri Johnson Viana",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2868239425",
+        "payment_plan_id": "3-1",
+        "amount": "197.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-31",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "victorts1991@gmail.com",
+      "identification": "39678273802",
+      "name": "Victor Toupitzen Specian",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2968812130",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "vinicius.laurentino@gmail.com",
+      "identification": "07359922402",
+      "name": "Vinícius Freire Laurentino",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1112909318",
+        "payment_plan_id": "1-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "emanuellenascimentocp2005@gmail.com",
+      "identification": "16789936700",
+      "name": "Emanuelle do Nascimento Cassiano Pereira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1852995991",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "gabrielaveloso.engmateriais@gmail.com",
+      "identification": "09646262686",
+      "name": "GABRIELA DE ASSIS VELOSO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4013822435",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "cassio.quintino@gmail.com",
+      "identification": "09378156673",
+      "name": "Cassio de Freitas Quintino",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3520853469",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "felipecamargo@outlook.com",
+      "identification": "14801508782",
+      "name": "Felipe Camargo",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1148198948",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "jonatasr.2000@gmail.com",
+      "identification": "43874635899",
+      "name": "Jonatas Pirene Rodrigues",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3893843196",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "epzz@pm.me",
+      "identification": "02422297005",
+      "name": "Eric Leite Peruzzo ",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3811629525",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-26",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "ionata.souza@gmail.com",
+      "identification": "12176243765",
+      "name": "ionata Rodrigues",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4193056891",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-26",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "mateushahn@hotmail.com",
+      "identification": "02757246038",
+      "name": "Mateus Hahn Souza",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2452239973",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-26",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "mateusvalasques2@gmail.com",
+      "identification": "03442574528",
+      "name": "Mateus Santos Valasques",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3156899099",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-25",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "leandronog.ufes@gmail.com",
+      "identification": "14638431780",
+      "name": "LEANDRO NOGUEIRA DOS SANTOS",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2182058113",
+        "payment_plan_id": "3-3",
+        "amount": "532.08",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-25",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "mantoniacoutinho@hotmail.com",
+      "identification": "12041329769",
+      "name": "MARIA ANTONIA CARDOSO COUTINHO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2139674437",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "walquiria94monteiro@gmail.com",
+      "identification": "05733506393",
+      "name": "Walquiria Helena Coelho Monteiro",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0976518860",
+        "payment_plan_id": "3-4",
+        "amount": "541.12",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "rbmasaia@gmail.com",
+      "identification": "41821451864",
+      "name": "Rodrigo Barreto Masaia",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1885418356",
+        "payment_plan_id": "3-5",
+        "amount": "550.25",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "blog.anutrof@gmail.com",
+      "identification": "09566037341",
+      "name": "Paulo Sérgio Rodrigues De Faria Tenório",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0553771764",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-23",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "romulostella@gmail.com",
+      "identification": "09597006928",
+      "name": "Romulo Luiz Grossi Stella",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3877588508",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-22",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "blsds95@gmail.com",
+      "identification": "10784905460",
+      "name": "Bruno Leonardo  Senna dos Santos ",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0570501501",
+        "payment_plan_id": "1-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-22",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "renato.kempe@gmail.com",
+      "identification": "20535008830",
+      "name": "Renato Fujita Kempe",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2446678345",
+        "payment_plan_id": "1-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "cesarop.ds@gmail.com",
+      "identification": "44258250805'",
+      "name": "Cesar Oliveira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0391225482",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "afchavesdasilveira@gmail.com",
+      "identification": "43143232803",
+      "name": "Ana Flavia Chaves Da Silveira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4017883415",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-20",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "csantoslima03@gmail.com",
+      "identification": "70267158106",
+      "name": "Carlos Eduardo Santos Lima",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3878020350",
+        "payment_plan_id": "3-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-20",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "brubs1503@gmail.com",
+      "identification": "34095592800",
+      "name": "Bruna Messinetti",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3402824810",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-20",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "eduardadworakowski@gmail.com",
+      "identification": "03881308067",
+      "name": "Eduarda Dworakowski",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3116866077",
+        "payment_plan_id": "3-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-19",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "arimateiamf@gmail.com",
+      "identification": "12022720458",
+      "name": "José de Arimateia Morais Filho",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1982656968",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-18",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "caioscarela@gmail.com",
+      "identification": "45206993808",
+      "name": "Caio Scarela Mourani",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4044250488",
+        "payment_plan_id": "3-7",
+        "amount": "568.75",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-18",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "limadanilo06@gmail.com",
+      "identification": "47618992800",
+      "name": "Danilo Lima Costa Santos",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2630390226",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-16",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "viktorjacobik@hotmail.com",
+      "identification": "41134742819",
+      "name": "Viktor Frigola Jacobik",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2539518321",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "holaflorentin@gmail.com",
+      "identification": "60127749071",
+      "name": "Edgar Florentin",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0010088752",
+        "payment_plan_id": "1-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "thaynanbreno@gmail.com",
+      "identification": "61422834310",
+      "name": "taynan breno gonçalves silva",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3874522028",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "rafaelmoura2929@gmail.com",
+      "identification": "07093722130",
+      "name": "Rafael Moura da Silva Serafim",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2841440583",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "felipeimenda04@gmail.com",
+      "identification": "40273145819",
+      "name": "Felipe Cha Cha da Costa",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1187759162",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "stephanni.ingrid@gmail.com",
+      "identification": "06501092442",
+      "name": "Stephanni Ingrid Ilzhöfer",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3981158770",
+        "payment_plan_id": "3-2",
+        "amount": "523.16",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "caiquecastroaraujo@gmail.com",
+      "identification": "43739294833",
+      "name": "CAIQUE DE CASTRO ARAUJO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3111120558",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "franey.lima@gmail.com",
+      "identification": "04165440531",
+      "name": "Franey Tanajura Lima",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2615148578",
+        "payment_plan_id": "3-10",
+        "amount": "597.30",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "thiagoaugusto92@hotmail.com",
+      "identification": "09107493452",
+      "name": "Thiago Augusto  Firmino Barbosa",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0910310877",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "leonamvdsilveira@gmail.com",
+      "identification": "10200372963",
+      "name": "Leonam Silveira ",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1037647439",
+        "payment_plan_id": "3-10",
+        "amount": "597.30",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "matheus.monteiro@live.com",
+      "identification": "14420653701",
+      "name": "Matheus Monteiro Gullo",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1340982814",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "nathymartins@gmail.com",
+      "identification": "08160290675",
+      "name": "Natália Martins de Matos Nunes",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2746147094",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "yanpessoa000@gmail.com",
+      "identification": "12756387754",
+      "name": "YAN PESSOA DA SILVA CORREIA",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3711573506",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "bgorresenm@gmail.com",
+      "identification": "90998596272",
+      "name": "Bruno Gorresen Mello",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0089041662",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "lucashenriquemoreira97@gmail.com",
+      "identification": "04229041047",
+      "name": "Luca Henrique Moreira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1872860157",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "matheusgomes062@gmail.com",
+      "identification": "10343986957",
+      "name": "Matheus Gomes",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3936837147",
+        "payment_plan_id": "1-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-12",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "lidiafrisso3@gmail.com",
+      "identification": "13323192702",
+      "name": "LIDIA FRISSO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2194804685",
+        "payment_plan_id": "3-5",
+        "amount": "550.25",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-12",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "marcellorenzo@gmail.com",
+      "identification": "03323634063",
+      "name": "Marcel Heinrich",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3228609656",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-12",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "daniellblucindo@gmail.com",
+      "identification": "11933474670",
+      "name": "DANIEL L B LUCINDO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1419750190",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-11",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "lopesrodrigo091@gmail.com",
+      "identification": "10735630658",
+      "name": "Rodrigo Antônio Lopes da Silva",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1394080928",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "rodrigosm@gmail.com",
+      "identification": "05215573484",
+      "name": "Rodrigo Souza de Melo",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0566723008",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "debora.mb91@gmail.com",
+      "identification": "38142693810",
+      "name": "Débora Luara Murakami Benites",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3350565190",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "re.acci@hotmail.com",
+      "identification": "06867819966",
+      "name": "Renata Medeiros Accioly",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4218912809",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "coachiaralins@gmail.com",
+      "identification": "08452595719",
+      "name": "Chiara Costa Lins",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0259276344",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-09",
+    "coupon": "JNG-ORION",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "leonardolauretti@hotmail.com",
+      "identification": "28662135803",
+      "name": "Leonardo Lauretti",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2335691181",
+        "payment_plan_id": "1-1",
+        "amount": "397.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-08",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "alexander.martin64@gmail.com",
+      "identification": "44314665840",
+      "name": "Martin Alexander Kretzschmar",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3399246055",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-07",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "caroline27gomes@gmail.com",
+      "identification": "48566398890",
+      "name": "Carol Albuquerque",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2620823530",
+        "payment_plan_id": "3-3",
+        "amount": "532.08",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-07",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "lunaperegrinamoon@gmail.com",
+      "identification": "05368551533",
+      "name": "Luna Peregrina",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2698341949",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-07",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "picanco.raquel@gmail.com",
+      "identification": "02302222261",
+      "name": "Raquel Vicente Picanço",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3117643274",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "leo.lks@hotmail.com.br",
+      "identification": "41052662846",
+      "name": "Leo Koki Shashiki",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0158462862",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "negocios.leonardosarmentocastro@gmail.com",
+      "identification": "44200584808",
+      "name": "Leonardo Sarmento de Castro",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1218938100",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "gabilermen@gmail.com",
+      "identification": "01683593081",
+      "name": "Gabriel Meneghini Lermen",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0980855152",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "contato@douglaspossasdev.com.br",
+      "identification": "01744341117",
+      "name": "Douglas Bezerra Possas",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3992300117",
+        "payment_plan_id": "3-10",
+        "amount": "597.30",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "thaynajhana@hotmail.com",
+      "identification": "05741902103",
+      "name": "Thayna Jhana Alves Brito Espindola",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0994397984",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "tiagobuchanelli@gmail.com",
+      "identification": "01782863036",
+      "name": "TIAGO ISAIAS BUCHANELLI DO AMARAL",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0372830941",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-04",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "blog.anutrof@gmail.com",
+      "identification": "09566037341",
+      "name": "Paulo Sérgio Rodrigues De Faria Tenório",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP0684745162",
+        "payment_plan_id": "3-1",
+        "amount": "41.42",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-03",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "pedrospadotto@icloud.com",
+      "identification": "40334344883",
+      "name": "Pedro Spadotto",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP4201828448",
+        "payment_plan_id": "3-10",
+        "amount": "597.30",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-03",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "aktakamura@gmail.com",
+      "identification": "35713476847",
+      "name": "Alexandre Kazuo Takamura",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3081024254",
+        "payment_plan_id": "3-12",
+        "amount": "616.80",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-03",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "juliavickbea@hotmail.com",
+      "identification": "39923802892",
+      "name": "Julia Beaucamp",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3006367643",
+        "payment_plan_id": "3-6",
+        "amount": "559.44",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "angelomariot@gmail.com",
+      "identification": "01461533678",
+      "name": "ANGELO CARDOSO",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1425143253",
+        "payment_plan_id": "3-3",
+        "amount": "532.08",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "marsolabr@gmail.com",
+      "identification": "51056808802",
+      "name": "Bruno Silva Marsola",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2457470524",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "leu.barcelos@gmail.com",
+      "identification": "01891398032",
+      "name": "Leonardo da Silva Barcelos",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2874892433",
+        "payment_plan_id": "3-10",
+        "amount": "597.30",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "felipe.canhetti@gmail.com",
+      "identification": "44185180888",
+      "name": "Felipe Canhetti de Oliveira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP2668004794",
+        "payment_plan_id": "3-4",
+        "amount": "541.12",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "jessicaborges_oli@hotmail.com",
+      "identification": "04111205143",
+      "name": "Jessica Borges de Oliveira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1045675213",
+        "payment_plan_id": "3-4",
+        "amount": "541.12",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-01",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "tassiausbea@gmail.com",
+      "identification": "09970650955",
+      "name": "Tassia Bianca Jansen Bueno",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP1090782779",
+        "payment_plan_id": "3-3",
+        "amount": "532.08",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-01",
+    "coupon": "JNG",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "c.oliveira005@gmail.com",
+      "identification": "21465539875",
+      "name": "Christian Oliveira",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "product_id": "36",
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3253841095",
+        "payment_plan_id": "3-1",
+        "amount": "497.00",
+        "status": "paid"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-01",
+    "observation": "Pedido importado Hotmart",
+    "customer": {
+      "email": "allef.a.lobo@hotmail.com",
+      "identification": "60442634366",
+      "name": "Állef Araújo Lôbo",
+      "phone": "5511999999999"
+    },
+    "items": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "payments": [
+      {
+        "gateway": "Hotmart",
+        "gateway_id": "HP3503696373",
+        "payment_plan_id": "1-1",
+        "amount": "37.00",
+        "status": "paid"
+      }
+    ]
+  }
+]
