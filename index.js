@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const formatOrder = require('./formatOrder'); 
 const callApi = require('./callApi'); 
@@ -129,6 +130,52 @@ app.post('/api/v1/importCSV', async (req, res) => {
   
   } catch (error) {
     res.status(500).json({ message: "Erro ao importar CSV", error: error.message });
+  }
+});
+
+
+// Public Webhook endpoint for Hotmart
+app.post('/api/v1/webhook/hotmart', async (req, res) => {
+  const webhookBody = req.body;
+  const transactionId = webhookBody.data?.purchase?.transaction || 'unknown';
+  
+  console.log(`\n[HOTMART WEBHOOK] Received event: ${webhookBody.event} for transaction: ${transactionId}`);
+  
+  try {
+    const tenantName = process.env.DEFAULT_TENANT || 'jobnagringa';
+    const tenantConfig = config[tenantName];
+    
+    if (!tenantConfig) {
+      throw new Error(`Tenant configuration not found for: ${tenantName}`);
+    }
+
+    const formattedData = formatOrder(webhookBody, tenantConfig);
+    console.log(`[HOTMART WEBHOOK] Formatted payload for transaction: ${transactionId}`);
+
+    const apiKey = process.env.NOVA_API_KEY;
+    if (!apiKey) {
+      throw new Error('NOVA_API_KEY not found in environment');
+    }
+
+    const apiResponse = await callApi(formattedData, tenantConfig, apiKey);
+    
+    console.log(`[HOTMART WEBHOOK] API Call Results for ${transactionId}:`, JSON.stringify(apiResponse, null, 2));
+
+    res.status(200).json({ 
+      success: true, 
+      message: 'Webhook processed successfully',
+      transactionId,
+      results: apiResponse 
+    });
+
+  } catch (error) {
+    console.error(`[HOTMART WEBHOOK ERROR] failed to process transaction ${transactionId}:`, error.message);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Error processing webhook', 
+      error: error.message,
+      transactionId
+    });
   }
 });
 

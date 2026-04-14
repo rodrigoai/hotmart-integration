@@ -21,7 +21,7 @@ function formatOrder(sourceJson, tenant) {
     const product = sourceData.product;
     const order_date = new Date(sourceJson.creation_date).toISOString().split('T')[0];
     
-    const paymentMethod = purchase.payment === 'CREDIT_CARD' ? tenant.creditCardCode : tenant.pixCode;
+    const paymentMethod = purchase.payment.type === 'CREDIT_CARD' ? tenant.creditCardCode : tenant.pixCode;
     const paymentPlan = `${paymentMethod}-${purchase.payment.installments_number}`;
     
 

@@ -4,10 +4,11 @@ A Node.js/Express integration service that connects **Hotmart** (digital product
 
 ## 📋 Features
 
-- ✅ **Real-time Webhook Integration** - Process Hotmart purchase events as they happen
+- ✅ **Real-time Webhook Integration** - Process Hotmart purchase events as they happen (Public & Authenticated)
 - ✅ **CSV Batch Import** - Import historical orders from Hotmart CSV exports
 - ✅ **Web Upload Interface** - User-friendly interface for uploading and managing CSV files
 - ✅ **Multi-tenant Support** - Configure multiple environments (production, staging)
+- ✅ **Environment Variable Support** - Securely manage API keys via `.env` file
 - ✅ **Automatic Data Transformation** - Maps Hotmart data to Nova.Money's API format
 - ✅ **Payment Method Mapping** - Supports Credit Card and PIX payments with installments
 
@@ -37,6 +38,12 @@ A Node.js/Express integration service that connects **Hotmart** (digital product
      - Product ID mappings
      - Payment method codes
      - Environment URLs
+   - **Create a `.env` file** in the root directory:
+     ```env
+     NOVA_API_KEY=your_secret_key_here
+     DEFAULT_TENANT=jobnagringa
+     PORT=3000
+     ```
 
 ### Starting the Server
 
@@ -84,6 +91,32 @@ Authorization: Bearer {YOUR_API_KEY}
 {
   "message": "Order processed",
   "apiResponse": [...]
+}
+```
+
+---
+
+### 2. Public Hotmart Webhook (Auto-authenticated)
+Public endpoint designed for direct Hotmart webhook integration. Uses `NOVA_API_KEY` from your `.env` file.
+
+**Endpoint:** `POST /api/v1/webhook/hotmart`
+
+**Headers:**
+```
+Content-Type: application/json
+```
+
+**Body:** Hotmart webhook payload (see `resources/webhook_example.json`)
+
+**Logging:** Every call is logged to the terminal with transaction ID and API response status.
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Webhook processed successfully",
+  "transactionId": "HP...",
+  "results": [...]
 }
 ```
 
