@@ -21,6 +21,15 @@ function parseCsvToJson(csvFilePath, jsonFilePath, tenant) {
         const paymentMethod = row['Método de pagamento'] === 'Pix' ? tenant.pixCode : tenant.creditCardCode;
         const paymentPlan = `${paymentMethod}-${row['Quantidade total de parcelas']}`;
 
+        // Get and trim product code to avoid whitespace issues
+        const productCode = row['Código do produto'] ? row['Código do produto'].trim() : '';
+        const productId = tenant.products[productCode];
+
+        // Debug logging for missing product mappings
+        if (!productId) {
+          console.warn(`⚠️  Product code "${productCode}" not found in tenant.products mapping. Available codes:`, Object.keys(tenant.products));
+        }
+
         const formattedJson = {
           date: formatDateToYYYYMMDD(row['Data da transação']),
           coupon: row['Código de cupom'],
@@ -38,14 +47,14 @@ function parseCsvToJson(csvFilePath, jsonFilePath, tenant) {
             city: row.Cidade,
           },
           items: [
-            { product_id: tenant.products[row['Código do produto']], quantity: row['Quantidade de itens'] }
+            { product_id: productId, quantity: row['Quantidade de itens'] }
           ],
           payments: [
             {
               gateway: 'Hotmart',
-              gateway_id: row[Object.keys(row)[0]],
+              gateway_id: row[Object.keys(row)[0]] + "-2",
               payment_plan_id: paymentPlan,
-              amount: row['Valor de compra com impostos'],
+              amount: row['Faturamento líquido'],
               status: "paid",
             }
           ]
