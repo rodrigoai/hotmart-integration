@@ -64,6 +64,30 @@ PORT=8080 node index.js
 Server running on port 3000
 ```
 
+---
+
+## ☁️ Vercel Deployment
+
+This project is optimized for deployment on **Vercel** as a Serverless Function.
+
+### Deployment Steps
+
+1. **Install Vercel CLI**: `npm i -g vercel`
+2. **Login**: `vercel login`
+3. **Deploy**: `vercel`
+
+### Environment Variables
+When deploying to Vercel, ensure you configure the following Environment Variables in the Vercel Dashboard:
+
+- `NOVA_API_KEY`: Your Nova.Money API secret client key.
+- `DEFAULT_TENANT`: The tenant name from `config.json` to use for the public webhook (e.g., `jobnagringa`).
+- `NODE_ENV`: Set to `production`.
+
+### ⚠️ Important: Statelessness
+Vercel functions are stateless. Any CSV files uploaded via the interface are stored in a temporary directory (`/tmp`) and will be deleted once the request processing completes. They will not persist across different requests.
+
+---
+
 ### Accessing the Application
 
 Once started, you can access:

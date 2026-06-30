@@ -20,12 +20,12 @@
       }
     ],
     "buyer": {
-      "email": "hgbonatto@gmail.com",
-      "name": "HUGO MORAES BONATTO",
+      "email": "peter@avengers.com",
+      "name": "Peter PARKER",
       "first_name": "HUGO",
       "last_name": "BONATTO",
-      "checkout_phone_code": "44",
-      "checkout_phone": "44999408731",
+      "checkout_phone_code": "12",
+      "checkout_phone": "997560110",
       "address": {
         "city": "Curitiba",
         "country": "Brasil",
@@ -37,7 +37,7 @@
         "number": "280",
         "complement": "109"
       },
-      "document": "09266617954",
+      "document": "99319618054",
       "document_type": "CPF"
     },
     "producer": {

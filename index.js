@@ -1,9 +1,12 @@
 require('dotenv').config();
 const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
 const formatOrder = require('./formatOrder'); 
 const callApi = require('./callApi'); 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const multer = require('multer');
 const parseCsvToJson = require('./parseCsvToJson');
 const rawData = fs.readFileSync('config.json');
@@ -11,20 +14,47 @@ const config = JSON.parse(rawData);
 
 const app = express();
 
-// Ensure csv_files directory exists
-if (!fs.existsSync('csv_files')) {
-  fs.mkdirSync('csv_files', { recursive: true });
+// Production hardening
+// Only use strict security headers on Vercel/Production
+const isVercel = process.env.VERCEL === '1';
+if (isVercel) {
+  app.use(helmet());
+} else {
+  // Relaxed security for local development to allow local fetch/uploads
+  app.use(helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false
+  }));
+}
+app.use(cors());
+
+// Serve the csv_files directory statically so the frontend can access them
+const uploadDir = isVercel 
+  ? path.join(os.tmpdir(), 'csv_files') 
+  : path.resolve(__dirname, 'csv_files');
+
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
+app.use('/csv_files', express.static(uploadDir));
+
+if (!isVercel) {
+  console.log(`[STORAGE] Running locally. Files will be stored in: ${uploadDir}`);
 }
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'csv_files/')
+    console.log(`[MULTER] Preparing destination for: ${file.originalname}`);
+    cb(null, uploadDir)
   },
   filename: function (req, file, cb) {
     // Keep original filename with timestamp prefix
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    cb(null, `${timestamp}_${file.originalname}`);
+    const newFilename = `${timestamp}_${file.originalname}`;
+    console.log(`[MULTER] Assigning filename: ${newFilename}`);
+    cb(null, newFilename);
   }
 });
 
@@ -48,10 +78,14 @@ app.use(express.static('public'));
 
 // Upload CSV file endpoint
 app.post('/api/v1/upload-csv', upload.single('csvFile'), (req, res) => {
+  console.log('[API] POST /api/v1/upload-csv hit');
   try {
     if (!req.file) {
+      console.error('[API] Upload error: No file received in request');
       return res.status(400).json({ message: 'No file uploaded' });
     }
+    
+    console.log(`[API] File uploaded successfully to path: ${req.file.path}`);
     
     res.status(200).json({ 
       message: 'File uploaded successfully',
@@ -67,11 +101,16 @@ app.post('/api/v1/upload-csv', upload.single('csvFile'), (req, res) => {
 
 // List uploaded files endpoint
 app.get('/api/v1/files', (req, res) => {
+  console.log('[API] GET /api/v1/files hit');
   try {
-    const files = fs.readdirSync('csv_files')
+    if (!fs.existsSync(uploadDir)) {
+      console.warn(`[API] Storage directory not found: ${uploadDir}`);
+      return res.status(200).json([]);
+    }
+    const files = fs.readdirSync(uploadDir)
       .filter(file => file.endsWith('.csv'))
       .map(file => {
-        const filePath = path.join('csv_files', file);
+        const filePath = path.join(uploadDir, file);
         const stats = fs.statSync(filePath);
         return {
           name: file,
@@ -90,12 +129,14 @@ app.get('/api/v1/files', (req, res) => {
 // Error handling middleware for multer
 app.use((error, req, res, next) => {
   if (error instanceof multer.MulterError) {
+    console.error(`[MULTER ERROR] ${error.code}: ${error.message}`);
     if (error.code === 'LIMIT_FILE_SIZE') {
       return res.status(400).json({ message: 'File too large. Maximum size is 10MB.' });
     }
     return res.status(400).json({ message: 'File upload error', error: error.message });
   }
   if (error) {
+    console.error(`[GENERAL MIDDLEWARE ERROR] ${error.message}`);
     return res.status(400).json({ message: error.message });
   }
   next();
@@ -112,6 +153,7 @@ app.post('/api/v1/order', async (req, res) => {
     res.status(200).json({ message: 'Order processed', apiResponse });
 
   } catch (err) {
+    console.error('Error processing order:', err);
     res.status(500).json({ message: 'Erro ao chamar a API', error: err.message, formattedData });
   }
 });
@@ -177,6 +219,16 @@ app.post('/api/v1/webhook/hotmart', async (req, res) => {
       transactionId
     });
   }
+});
+
+// Final error handling middleware for production
+app.use((err, req, res, next) => {
+  console.error('[UNHANDLED ERROR]', err.stack);
+  res.status(err.status || 500).json({
+    success: false,
+    message: 'Internal Server Error',
+    error: process.env.NODE_ENV === 'production' ? 'An unexpected error occurred' : err.message
+  });
 });
 
 
